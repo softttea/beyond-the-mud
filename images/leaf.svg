@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <path d="M100 100 L169.3 60 A80 80 0 1 1 140 30.7 Z" fill="#839958" stroke="#0A3323" stroke-width="3"/>
+  <g stroke="#0A3323" stroke-width="2" opacity="0.5">
+    <line x1="100" y1="100" x2="100" y2="178"/>
+    <line x1="100" y1="100" x2="30" y2="140"/>
+    <line x1="100" y1="100" x2="30" y2="60"/>
+    <line x1="100" y1="100" x2="70" y2="28"/>
+  </g>
+</svg>
