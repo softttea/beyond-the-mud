@@ -239,3 +239,53 @@ blockquote.quote {
 .story h3 { margin: 28px 0 8px; font-size: 1.5rem; }
 .story ul, .story ol { padding-left: 22px; }
 .story li { margin-bottom: 6px; }
+/* ---------- Lotus Path page ---------- */
+.stage {
+  position: relative;
+  margin: 28px 0;
+  padding: 28px 28px 28px 28px;
+  border: 3px solid var(--dark);
+  border-radius: 24px;
+  box-shadow: 6px 6px 0 var(--dark);
+  scroll-margin-top: 20px;
+}
+.stage.mud   { background: var(--moss); }
+.stage.roots { background: var(--lime); }
+.stage.water { background: #bfe0e0; }
+.stage.light { background: #fffdf0; }
+.stage.bloom { background: var(--lotus); }
+
+.stage-num {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 12px;
+  border: 2px solid var(--dark);
+  border-radius: 999px;
+  background: var(--cream);
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 15px;
+}
+.stage h2 { margin: 0 0 4px; font-size: 2.4rem; }
+.stage .question {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.path-connector {
+  height: 28px;
+  width: 4px;
+  margin: 0 auto;
+  background: repeating-linear-gradient(
+    to bottom, var(--dark) 0 6px, transparent 6px 12px
+  );
+}
+
+.ending {
+  margin: 48px 0;
+  padding: 28px;
+  border-top: 3px solid var(--dark);
+  border-bottom: 3px solid var(--dark);
+  font-size: 1.15rem;
+}
+.ending p { margin: 0 0 12px; }
