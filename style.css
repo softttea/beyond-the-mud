@@ -1,0 +1,54 @@
+/* ---------- Palette ---------- */
+:root {
+  --dark:  #0A3323;  /* dark green */
+  --moss:  #839958;  /* moss green */
+  --cream: #F7F4D5;  /* background */
+  --rose:  #D3968C;  /* rosy brown */
+  --teal:  #105666;  /* midnight green */
+  --lotus: #F4A7C0;  /* lotus pink */
+  --lime:  #DDF0A0;  /* light lime */
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: var(--cream);
+  color: var(--dark);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: 'Bagel Fat One', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--dark);
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+
+a { color: var(--teal); }
+
+/* ---------- Retro window ---------- */
+.win {
+  max-width: 560px;
+  border: 3px solid var(--dark);
+  background: #e9e6dc;
+  box-shadow: 6px 6px 0 var(--dark);
+}
+
+.win-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: var(--teal);
+  color: var(--cream);
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.win-body { padding: 16px; }
