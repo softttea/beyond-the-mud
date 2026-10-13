@@ -154,3 +154,45 @@ a { color: var(--teal); }
 }
 .hotline a { color: var(--dark); }
 .small { font-size: 15px; }
+/* ---------- Understand page ---------- */
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 32px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+.toc a {
+  padding: 5px 12px;
+  border: 2px solid var(--dark);
+  border-radius: 999px;
+  background: var(--lime);
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 15px;
+}
+.toc a:hover { background: var(--lotus); }
+
+.article h2 { margin-top: 56px; scroll-margin-top: 20px; }
+.article h3 { font-size: 1.4rem; margin-top: 32px; }
+.article ul { padding-left: 22px; }
+.article li { margin-bottom: 6px; }
+
+blockquote.quote {
+  margin: 20px 0;
+  padding: 14px 20px;
+  border-left: 6px solid var(--rose);
+  background: #fffdf0;
+  border-radius: 0 16px 16px 0;
+  font-style: italic;
+}
+
+.key-idea {
+  margin: 28px 0;
+  padding: 20px 24px;
+  border: 3px solid var(--dark);
+  border-radius: 20px;
+  background: var(--lotus);
+  box-shadow: 5px 5px 0 var(--dark);
+  font-weight: 500;
+}
