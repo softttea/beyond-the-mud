@@ -289,3 +289,26 @@ blockquote.quote {
   font-size: 1.15rem;
 }
 .ending p { margin: 0 0 12px; }
+/* ---------- About page ---------- */
+.win.wide { max-width: 100%; margin: 32px 0; }
+.win.wide .win-body { padding: 28px; background: #fffdf0; }
+.win.wide .win-body h3 { margin-top: 28px; font-size: 1.5rem; }
+.win.wide .win-body ul { padding-left: 22px; }
+.win.wide .win-body li { margin-bottom: 6px; }
+
+.bloom-line {
+  margin: 36px 0 8px;
+  font-family: 'Bagel Fat One', sans-serif;
+  font-size: clamp(2rem, 7vw, 3.4rem);
+  line-height: 1.1;
+  color: var(--dark);
+}
+
+.not-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.not-list li { margin-bottom: 4px; }
