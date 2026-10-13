@@ -312,3 +312,31 @@ blockquote.quote {
   font-weight: 500;
 }
 .not-list li { margin-bottom: 4px; }
+/* ---------- Stickers ---------- */
+.hero, .blob { position: relative; }
+.hero > *:not(.sticker),
+.blob > *:not(.sticker) { position: relative; z-index: 1; }
+
+.sticker {
+  position: absolute;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+.sticker-hero {
+  width: clamp(120px, 26vw, 280px);
+  right: 0;
+  top: 0;
+  transform: rotate(6deg);
+}
+.sticker-blob {
+  width: clamp(110px, 18vw, 190px);
+  right: -10px;
+  bottom: -40px;
+  transform: rotate(-8deg);
+}
+@media (max-width: 700px) {
+  .sticker-hero { width: 120px; opacity: 0.35; top: -10px; }
+  .sticker-blob { width: 100px; opacity: 0.5; right: 0; bottom: -30px; }
+}
