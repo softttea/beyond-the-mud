@@ -340,3 +340,71 @@ blockquote.quote {
   .sticker-hero { width: 120px; opacity: 0.35; top: -10px; }
   .sticker-blob { width: 100px; opacity: 0.5; right: 0; bottom: -30px; }
 }
+/* ---------- Moodboard details ---------- */
+
+/* soft polka-dot paper background */
+body {
+  background-image: radial-gradient(rgba(131, 153, 88, 0.22) 1.5px, transparent 1.6px);
+  background-size: 22px 22px;
+}
+
+::selection { background: var(--lotus); color: var(--dark); }
+
+/* washi tape on cards */
+.card, .story, .stage, .help-block { position: relative; }
+
+.card::before, .story::before, .stage::before, .help-block::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 28px;
+  width: 96px;
+  height: 28px;
+  background:
+    radial-gradient(rgba(255,255,255,0.9) 22%, transparent 24%) 0 0 / 10px 10px,
+    var(--lotus);
+  transform: rotate(-4deg);
+  opacity: 0.95;
+  z-index: 2;
+}
+.card:nth-child(even)::before,
+.story:nth-of-type(even)::before,
+.stage:nth-of-type(even)::before,
+.help-block:nth-of-type(even)::before {
+  left: auto;
+  right: 28px;
+  transform: rotate(5deg);
+  background:
+    radial-gradient(rgba(255,255,255,0.9) 22%, transparent 24%) 0 0 / 10px 10px,
+    var(--moss);
+}
+
+/* ric-rac zigzag above the footer */
+.footer { border-top: none; position: relative; padding-top: 34px; }
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background:
+    linear-gradient(135deg, var(--moss) 25%, transparent 25%) -7px 0 / 14px 14px,
+    linear-gradient(225deg, var(--moss) 25%, transparent 25%) -7px 0 / 14px 14px;
+}
+
+/* centered retro window with a quote */
+.win.center { margin: 0 auto; }
+.win.center .win-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fffdf0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+.win.center .win-body img { width: 110px; height: auto; flex-shrink: 0; }
+@media (max-width: 600px) {
+  .win.center .win-body { flex-direction: column; text-align: center; }
+}
