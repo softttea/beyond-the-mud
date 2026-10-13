@@ -134,3 +134,23 @@ a { color: var(--teal); }
   border-top: 2px solid var(--dark);
   font-size: 15px;
 }
+/* ---------- Help page ---------- */
+.help-block {
+  margin: 24px 0;
+  padding: 22px;
+  border: 3px solid var(--dark);
+  border-radius: 20px;
+  background: #fffdf0;
+  box-shadow: 5px 5px 0 var(--dark);
+}
+.help-block.urgent { background: var(--rose); }
+.help-block h2 { margin: 0 0 8px; font-size: 1.7rem; }
+.help-block ul { padding-left: 22px; }
+.hotline {
+  margin: 6px 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.hotline a { color: var(--dark); }
+.small { font-size: 15px; }
