@@ -408,3 +408,13 @@ body {
 @media (max-width: 600px) {
   .win.center .win-body { flex-direction: column; text-align: center; }
 }
+/* ---------- References ---------- */
+.references {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 3px solid var(--dark);
+}
+.references h2 { margin-top: 0; }
+.references ol { padding-left: 22px; }
+.references li { margin-bottom: 14px; font-size: 16px; scroll-margin-top: 20px; }
+sup a { text-decoration: none; font-weight: 700; }
