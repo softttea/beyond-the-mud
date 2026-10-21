@@ -468,3 +468,26 @@ sup a { text-decoration: none; font-weight: 700; }
 .country h3 { margin: 0 0 4px; font-size: 1.15rem; }
 .country p { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
 .country .hotline { font-size: 1.6rem; margin: 2px 0 6px; }
+/* ---------- Sticker strips ---------- */
+.strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 40px 0;
+}
+.strip img {
+  width: clamp(70px, 16vw, 120px);
+  height: auto;
+  mix-blend-mode: multiply;
+}
+.strip img:nth-child(odd)  { transform: rotate(-6deg); }
+.strip img:nth-child(even) { transform: rotate(5deg); }
+.strip img.stages { width: clamp(260px, 70vw, 520px); transform: none; }
+.strip img.teapot { width: clamp(120px, 28vw, 200px); }
+
+.sticker-hero.flip { transform: rotate(180deg); }
+
+/* pixel cursor */
+body { cursor: url("images/cursor.svg") 0 0, auto; }
