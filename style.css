@@ -452,3 +452,19 @@ sup a { text-decoration: none; font-weight: 700; }
   border-radius: 999px;
   background: var(--cream);
 }
+/* ---------- Crisis lines ---------- */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.country {
+  padding: 14px 16px;
+  border: 2px solid var(--dark);
+  border-radius: 16px;
+  background: var(--cream);
+}
+.country h3 { margin: 0 0 4px; font-size: 1.15rem; }
+.country p { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.country .hotline { font-size: 1.6rem; margin: 2px 0 6px; }
